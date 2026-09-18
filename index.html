@@ -19,8 +19,8 @@
 </main></div>
 <div id="reportModal" class="modal hidden"><form id="reportForm" class="box"><h2 id="formTitle">إضافة تقرير سلامة</h2><input type="hidden" id="reportId"><div class="formgrid"><label>التاريخ<input id="rDate" type="date" required></label><label>المختبر<select id="rLab" required><option>كيمياء</option><option>فيزياء</option></select></label><label>نوع التقرير<select id="rType"><option>تفتيش يومي</option><option>ملاحظة سلامة</option><option>عطل</option><option>حادث / واقعة</option><option>متابعة إجراء تصحيحي</option></select></label><label>الحالة<select id="rStatus"><option>مفتوح</option><option>عاجل</option><option>مغلق</option></select></label><label class="wide">العنوان<input id="rTitle" required maxlength="150"></label><label class="wide">الملاحظات<textarea id="rFindings" rows="4" required></textarea></label><label class="wide">الإجراء التصحيحي<textarea id="rAction" rows="3"></textarea></label><label>المسؤول عن المتابعة<input id="rOwner"></label><label>تاريخ الاستحقاق<input id="rDue" type="date"></label></div><div class="toolbar"><button class="primary">حفظ التقرير</button><button type="button" class="secondary" id="cancelModal">إلغاء</button></div><div id="formMsg"></div></form></div>
 <script>
-const SUPABASE_URL='PASTE_YOUR_SUPABASE_URL_HERE';
-const SUPABASE_PUBLISHABLE_KEY='PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE';
+const SUPABASE_URL='https://nlhxyqbzwbzoiaxpbcog.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_mvuI9cpJYxNM8q-JubGFOA_pVNp6m2U';
 let db=null, reports=[];
 const $=id=>document.getElementById(id);
 function configured(){return SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('PASTE_')&&!SUPABASE_PUBLISHABLE_KEY.includes('PASTE_')}
