@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Health-And-Safety-Team</string>
+    <string name="title_activity_main">Health-And-Safety-Team</string>
+    <string name="package_name">com.s3roralalwani.schoollabsafety</string>
+    <string name="custom_url_scheme">com.s3roralalwani.schoollabsafety</string>
+</resources>
